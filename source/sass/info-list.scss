@@ -1,0 +1,17 @@
+.info-list {
+  @include reset-list;
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  text-align: left;
+}
+
+.info-list__item {
+  max-width: 345px;
+  width: 100%;
+  margin: 0 auto;
+}

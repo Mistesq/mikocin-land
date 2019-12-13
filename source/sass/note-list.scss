@@ -1,0 +1,15 @@
+.note-list {
+  @include reset-list;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.note-list__item {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
