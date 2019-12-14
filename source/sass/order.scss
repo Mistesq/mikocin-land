@@ -1,4 +1,42 @@
+.order {
+  max-width: 275px;
+  width: 100%;
+  padding: 50px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  box-sizing: border-box;
+  border: 6px $green solid;
+}
+
 .order__form {
   display: flex;
   flex-direction: column;
+}
+
+.order__intro {
+  margin: 0;
+}
+
+.order__cost-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.order__group-cost {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.order__info {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.order__guard {
+  font-size: 14px;
+  line-height: 17px;
 }

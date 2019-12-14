@@ -1,0 +1,14 @@
+.info {
+  padding: 25px 45px 25px 45px;
+
+  box-sizing: border-box;
+  border: 3px $orange solid;
+  border-radius: 10px;
+}
+
+.info__text {
+  margin: 0;
+
+  font-size: 22px;
+  line-height: 28px;
+}

@@ -15,3 +15,18 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.info-list__caption {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.info-list__item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info-list__box-img {
+  margin-right: 15px;
+}

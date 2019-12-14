@@ -1,9 +1,9 @@
 body {
   margin: 0;
 
-  font-family: "Times New Roman", serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 *,
@@ -24,6 +24,10 @@ a {
 
 h2 {
   margin: 0;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 48px;
+  line-height: 48px;
 }
 
 .visually-hidden {
@@ -48,5 +52,13 @@ h2 {
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.wrap {
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 50px;
+
+  background-color: $gray;
 }

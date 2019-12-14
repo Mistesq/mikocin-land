@@ -1,9 +1,104 @@
 .site-list {
   @include reset-list;
 
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-  // align-items: stretch;
-  // width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  text-align: left;
+}
+
+.site-list__item {
+  position: relative;
+
+  margin-bottom: 45px;
+
+  box-sizing: border-box;
+
+  &:nth-child(1) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-promo1.png");
+      width: 60px;
+      height: 60px;
+      left: -80px;
+      top: 6px;
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-promo2.png");
+      width: 60px;
+      height: 60px;
+      left: -80px;
+      top: 5px;
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-promo3.png");
+      width: 60px;
+      height: 60px;
+      left: -80px;
+      top: 21px;
+    }
+  }
+}
+
+.site-list--guide {
+  flex-direction: column;
+}
+
+.site-list--guide .site-list__item {
+  position: relative;
+
+  padding: 37px 0 37px 0;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+
+  &:nth-child(1) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-how1.png");
+      width: 135px;
+      height: 135px;
+      left: -160px;
+      top: 6px;
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-how2.png");
+      width: 135px;
+      height: 135px;
+      left: -160px;
+      top: 5px;
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-how3.png");
+      width: 135px;
+      height: 135px;
+      left: -160px;
+      top: 21px;
+    }
+  }
 }

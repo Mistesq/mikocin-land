@@ -9,7 +9,42 @@
 }
 
 .note-list__item {
-  max-width: 350px;
+  max-width: 370px;
   width: 100%;
-  margin: 0 auto;
+  padding: 50px 20px 20px 20px;
+
+  background-color: $white;
+  box-sizing: border-box;
+
+  border-top: 6px $green solid;
+  border-radius: 10px;
+}
+
+.note-list--full-border .note-list__item {
+  border: 6px $orange solid;
+}
+
+.note-list__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.node-list__text {
+  margin: 15px 0 30px 0;
+}
+
+.note-list__footer {
+  padding-top: 25px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/line.png");
+    width: 330px;
+    height: 11px;
+    left: -10px;
+    top: 0px;
+  }
 }
