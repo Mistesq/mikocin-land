@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Микоцин</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="preload" as="font">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap&subset=cyrillic" rel="preload" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -23,7 +23,8 @@
       </div>
       <div class="container">
         <div class="section section--order">
-          <h2 class="section__title">Комплексное <br> избавление <br> от грибка —<br> изнутри и снаружи </h2>
+          <h2 class="section__title">Комплексное <br> избавление <br> от грибка — </h2>
+          <div class="section__subtitle">изнутри и снаружи</div>
           <ul class="section__list site-list">
             <li class="site-list__item">Комплекс Микоцин <b>устраняет <br> зуд, неприятный запах</b> <br> и возвращает эстетичный вид</li>
             <li class="site-list__item">Таблетки Микоцин <br> <b>уничтожают все виды грибка</b> <br> на ногтях и коже</li>
@@ -31,30 +32,46 @@
           </ul>
         </div>
         <section class="promo__order order">
-          <p class="order__intro">
-            <b>Успейте заказать<br> со скидкой <br> до 10.09.2018</b>
-          </p>
-          <div class="order__cost-block">
-            <div class="order__group-cost">
-              <p>старая цена</p>
-              <div class="order__cost"></div>
+          <div class="order__box">
+            <div class="order__header">
+              <div class="order__wrap">
+                Бесплатно
+              </div>
             </div>
-            <div class="order__group-cost">
-              <p>новая цена</p>
-              <div class="order__cost"></div>
+            <p class="order__intro">
+              <b>Успейте заказать<br> со скидкой <br> <span class="orange-text">до 10.09.2018</span> </b>
+            </p>
+            <div class="order__cost-block">
+              <div class="order__group-cost">
+                <p class="order__label-cost">старая цена</p>
+                <div class="order__cost">
+                  <img src="/img/old-cost.png" alt="">
+                </div>
+              </div>
+              <div class="order__group-cost">
+                <p class="order__label-cost"><b>новая цена</b></p>
+                <div class="order__cost">
+                  <img src="/img/new-cost.png" alt="">
+                </div>
+              </div>
             </div>
+            <form class="order__form" action="index.html" method="post">
+              <label class="order__label order__label--name" for="first-name">
+                <input class="order__input " id="first-name" type="text" name="first-name" placeholder="Имя">
+              </label>
+              <label class="order__label order__label--phone" for="phone">
+                <input class="order__input" id="phone" type="tel" name="phone" placeholder="Телефон">
+              </label>
+              <button class="order__submit button" type="submit" name="button">Заказать <br> <span class="order__submit-text">со скидкой</span></button>
+            </form>
+            <p class="order__info">
+              Осталось <span class="green-text">10</span> упаковок <br> со скидкой
+            </p>
           </div>
-          <form class="order__form" action="index.html" method="post">
-            <input type="text" class="order__input">
-            <input type="tel" class="order__input">
-            <button class="order__submit" type="submit" name="button">Заказать <br> со скидкой</button>
-          </form>
-          <p class="order__info">
-            Осталось 10 упаковок <br> со скидкой
-          </p>
-          <p class="order__guard">
+
+          <div class="order__guard">
             Ваши данные защищены!
-          </p>
+          </div>
         </section >
       </div>
     </article>
@@ -68,7 +85,7 @@
         <li class="info-list__item">
           <div class="info-list__item-header">
             <div class="info-list__box-img box-img ">
-              <img src="/img/grib-1.jpg" alt="" class="box-img__img">
+              <img src="/img/grib-1.png" alt="" class="box-img__img">
             </div>
             <div class="info-list__caption">Сложным <br> формам <br> аллергии</div>
           </div>
@@ -82,7 +99,7 @@
         <li class="info-list__item">
           <div class="info-list__item-header">
             <div class="info-list__box-img box-img">
-              <img src="/img/grib-2.jpg" alt="" class="box-img__img">
+              <img src="/img/grib-2.png" alt="" class="box-img__img">
             </div>
             <div class="info-list__caption">Потере ногтя <br> и ампутации <br> пальца
             </div>
@@ -97,7 +114,7 @@
         <li class="info-list__item">
           <div class="info-list__item-header">
             <div class="info-list__box-img box-img">
-              <img src="/img/grib-3.jpg" alt="" class="box-img__img">
+              <img src="/img/grib-3.png" alt="" class="box-img__img">
             </div>
             <div class="info-list__caption">Тяжелому <br> поражению <br> внутренних <br> органов
             </div>
@@ -110,7 +127,7 @@
         </li>
       </ul>
 
-      <div class="section__info info">
+      <div class="section__info info info--stats">
         <p class="info__text"><b>Статистика</b>: каждые 60 секунд врачи диагностируют опасные поражения внутренних органов,
           вызванные грибком, у 1-го пациент
         </p>
@@ -121,13 +138,13 @@
   <section class="section section--icon section--gray">
     <h2 class="section__title">Почему большинство средств против грибка малоэффективны</h2>
     <ul class="section__list note-list">
-      <li class="note-list__item">
+      <li class="note-list__item note-list__item--star">
         <div class="note-list__title">Чудо-средства</div>
         <p class="note-list__text"><b>Обещают, что избавят от грибка <br>  меньше, чем за месяц, хотя <br>
           это невозможно</b>.
         </p>
         <div class="note-list__footer">
-          <div class="note-list__title note-list__title--orange">Но</div>
+          <div class="note-list__title"><span class="orange-text">Но</span></div>
           <p class="note-list__text">Ноготь – это роговой слой кожи.
             Он не имеет живых клеток. Часть ногтя, которая уже поражена грибком, не может выздороветь
             до полного его отрастания. Единственный способ вылечить грибок – <b>подавлять его распространение все время,
@@ -137,11 +154,11 @@
         </div>
       </li>
 
-      <li class="note-list__item">
+      <li class="note-list__item note-list__item--cream">
         <div class="note-list__title">Наружные средства</div>
         <p class="note-list__text"><b>Способны устранить внешние <br>  проявления грибка.<br></b> (кремы, лаки, пластыри)</p>
         <div class="note-list__footer">
-          <div class="note-list__title note-list__title--orange">Но</div>
+          <div class="note-list__title"><span class="orange-text">Но</span></div>
           <p class="note-list__text">Очаг заражения находится
             под ногтевой пластиной, а наружные средства  не способны его достичь - они действуют только на на верхнем слое ногтя,  поэтому <b>не способны избавить от грибка</b>. Для повышения их эффективности рекомендуется <b>спиливать ноготь полностью</b>,
             но это больно, некрасиво
@@ -150,13 +167,13 @@
         </div>
       </li>
 
-      <li class="note-list__item">
+      <li class="note-list__item note-list__item--pills">
         <div class="note-list__title">Внутренние средства</div>
         <p class="note-list__text"><b>Убивают грибковую инфекцию<br>
           в организме.</b> <br> (таблетки, саше, капли)
         </p>
         <div class="note-list__footer">
-          <div class="note-list__title note-list__title--orange">Но</div>
+          <div class="note-list__title"><span class="orange-text">Но</span></div>
           <p class="note-list__text"><b>Могут подействовать только
             при длительном использовании</b>
             (6 - 8 месяцев). За это время внутренние средства в 93%
@@ -170,7 +187,6 @@
     </ul>
 
     <div class="section__info info">
-      <div class="info__title">Вывод:</div>
       <p class="info__text">Даже если вы используете наружные и внутренние средства одновременно, <b>это не гарантирует
         избавления от грибка</b>: они могут конфликтовать между собой по составу и блокировать действие
         друг друга или быть неэффективными против вашего типа грибка.
@@ -180,10 +196,15 @@
 </div>
 
     <section class="section section--icon-one">
-      <h2 class="section__title">Почему таблетки Микоцин от грибка <br> так эффективны?</h2>
+      <h2 class="section__title">Почему таблетки <span class="orange-text">Микоцин</span> от грибка <br> так эффективны?</h2>
       <p class="section__desc">Другие средства не дают полную защиту от грибковых инфекций и могут быть опасны</p>
       <ul class="section__list note-list note-list--full-border">
         <li class="note-list__item">
+          <div class="note-list__header">
+            <div class="note-list__wrap">
+              <img src="/img/icon-featur1.png" width="105" height="65" alt="" class="note-list__img">
+            </div>
+          </div>
           <div class="note-list__title">Кремы и мази</div>
           <p class="note-list__text"><b>Не лечат грибок, потому <br>
             что не проникают в ногтевую <br> пластину</b>. Только временно <br> избавляют от симптомов инфекций. Могут вызвать сильную аллергию
@@ -191,12 +212,22 @@
           </p>
         </li>
         <li class="note-list__item">
+          <div class="note-list__header">
+            <div class="note-list__wrap">
+              <img src="/img/icon-featur2.png" width="135" height="90" alt="" class="note-list__img note-list__img--full">
+            </div>
+          </div>
           <div class="note-list__title">Народные методы</div>
           <p class="note-list__text">Помогают только в редких случаях.<br> <b>Могут причинить вред коже <br>
             и ногтям</b>. Не предотвращают повторные заражения грибком.
           </p>
         </li>
         <li class="note-list__item">
+          <div class="note-list__header">
+            <div class="note-list__wrap">
+              <img src="/img/icon-featur3.png" width="80" height="56" alt="" class="note-list__img">
+            </div>
+          </div>
           <div class="note-list__title">Таблетки</div>
           <p class="note-list__text"><b>Действуют против всех видов грибков</b>. Быстро снимают неприятные
             симптомы и уничтожают инфекцию изнутри вне зависимости от области
@@ -207,12 +238,14 @@
       </ul>
 
       <div class="section__gradient-block gradient-block">
-        <p class="gradient-block__text">Зачем лечить сложнее, дольше и дороже, если есть Микоцин?</p>
+        <div class="gradient-block__inner">
+          <p class="gradient-block__text">Зачем лечить сложнее, дольше и дороже, если есть <span class="orange-text">Микоцин</span>?</p>
+        </div>
       </div>
     </section>
 
     <section class="section section--icon section--end">
-      <h2 class="section__title">Как применять Микоцин</h2>
+      <h2 class="section__title">Как применять <span class="orange-text">Микоцин</span></h2>
       <div class="wrapper">
         <div class="section__box-img">
           <img src="/img/product-how.png" width="439" height="407" alt="" class="section__img">

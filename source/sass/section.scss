@@ -28,7 +28,7 @@
 
 
 .section__list {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .section--icon {
@@ -70,6 +70,21 @@
   line-height: 48px;
 }
 
+.section--gray .section__title {
+  margin-bottom: 70px;
+}
+
+.section--order  .section__title {
+  margin: 0;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.section--order  .section__subtitle {
+  font-size: 34px;
+  line-height: 38px;
+}
+
 .section--end .section__title {
   margin-bottom: 70px;
 }
@@ -93,6 +108,7 @@
 
 .section--order  .section__list {
   padding-left: 80px;
+  margin-bottom: 0;
 }
 
 .section__box-img {

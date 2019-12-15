@@ -1,12 +1,25 @@
-.gradient-block__text {
-  padding: 30px 25px 30px 25px;
-  
+.gradient-block {
+  max-width: 875px;
+  width: 100%;
+  margin: 0 auto;
+
+  padding: 6px;
+
   font-size: 27px;
   line-height: 27px;
   font-weight: 500;
 
+
   box-sizing: border-box;
 
-  border: 6px $green solid;
   border-radius: 10px;
+
+  background: linear-gradient(to right, $orange, $green);
+}
+
+.gradient-block__inner {
+  padding: 15px 20px 15px 20px;
+
+  background-color: $white;
+  box-sizing: border-box;
 }

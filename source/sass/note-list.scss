@@ -13,15 +13,114 @@
   width: 100%;
   padding: 50px 20px 20px 20px;
 
+  position: relative;
+
   background-color: $white;
   box-sizing: border-box;
 
-  border-top: 6px $green solid;
+  border-top: 6px $light-green solid;
   border-radius: 10px;
+
+  &--star::before {
+    content: "";
+    display: block;
+    padding: 5px 15px 50px 15px;
+    max-width: 100px;
+    width: 100%;
+    height: 85px;
+
+    position: absolute;
+    left: 37%;
+    top: -42px;
+
+    background-image: url("../img/icon-med1.png");
+    background-position: center 0%;
+    background-repeat: no-repeat;
+    background-color: $gray;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+
+    &--cream::before {
+      content: "";
+      display: block;
+      padding: 5px  15px 50px 15px;
+      max-width: 100px;
+      width: 100%;
+      height: 85px;
+
+      position: absolute;
+      left: 37%;
+      top: -42px;
+
+      background-image: url("../img/icon-med2.png");
+      background-position: center 0%;
+      background-repeat: no-repeat;
+      background-color: $gray;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+
+    &--pills::before {
+      content: "";
+      display: block;
+      padding: 5px  15px 50px 15px;
+      max-width: 100px;
+      width: 100%;
+      height: 82px;
+
+      position: absolute;
+      left: 37%;
+      top: -42px;
+
+      background-image: url("../img/icon-med3.png");
+      background-position: 58% 20%;
+      background-repeat: no-repeat;
+      background-color: $gray;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
 }
 
+
+
 .note-list--full-border .note-list__item {
+  padding-top: 75px;
   border: 6px $orange solid;
+}
+
+.note-list__header {
+  max-width: 110px;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  padding: 6px;
+
+  position: absolute;
+  top: -55px;
+  left: 35%;
+  background: linear-gradient(to top, $orange 0%, $orange 50.5%, $white 51%, $white 100%);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.note-list__wrap {
+  max-width: 110px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: $white;
+}
+
+.note-list__img--full {
+  width: 135px;
+  height: 90px;
+
+  position: absolute;
+  left: 0px;
+  top: -15px;
 }
 
 .note-list__title {
@@ -44,7 +143,7 @@
     background-image: url("../img/line.png");
     width: 330px;
     height: 11px;
-    left: -10px;
+    left: 0px;
     top: 0px;
   }
 }

@@ -17,6 +17,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: $light-gray;
 }
 
 .promo__item {

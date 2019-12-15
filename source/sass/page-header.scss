@@ -1,5 +1,12 @@
 .page-header {
+  min-height: 860px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-image: url("../img/back-promo.jpg");
+  background-position: 55% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

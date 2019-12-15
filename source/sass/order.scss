@@ -1,13 +1,25 @@
 .order {
   max-width: 275px;
   width: 100%;
-  padding: 50px 15px 15px 15px;
+
   display: flex;
   flex-direction: column;
+
+  position: relative;
+
   text-align: center;
 
   box-sizing: border-box;
-  border: 6px $green solid;
+  background-color: $white;
+  border: 6px $light-green solid;
+  border-radius: 10px;
+}
+
+.order__box {
+  padding: 50px 20px 15px 20px;
+  width: 100%;
+
+  box-sizing: border-box;
 }
 
 .order__form {
@@ -15,28 +27,174 @@
   flex-direction: column;
 }
 
+.order__input {
+  padding: 25px 25px 25px 55px;
+  max-width: 220px;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: $light-gray;
+
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: $gray;
+  box-sizing: border-box;
+
+
+}
+
+.order__label {
+  margin-bottom: 12px;
+  position: relative;
+
+  &--name::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/icon-form-name.png");
+      width: 19px;
+      height: 23px;
+      left: 25px;
+      top: 21px;
+  }
+
+  &--phone::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/icon-form-phone.png");
+      width: 21px;
+      height: 24px;
+      left: 25px;
+      top: 24px;
+  }
+}
+
+.order__submit-text {
+  font-size: 16px;
+  line-height: 16px;
+}
+
 .order__intro {
   margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 20px;
+  line-height: 22px;
 }
 
 .order__cost-block {
+  margin-bottom: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: stretch;
 }
 
 .order__group-cost {
+
   font-size: 14px;
   line-height: 24px;
 }
 
+.order__label-cost {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .order__info {
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 18px;
 }
 
+.order__cost {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.order__submit {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
 .order__guard {
+  max-width: 275px;
+  width: 100%;
+  padding: 15px 25px 15px 50px;
+
+  position: relative;
+
+
   font-size: 14px;
   line-height: 17px;
+  color: $light-gray;
+  background-color: $gray;
+
+  &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/icon-form-shield.png");
+      width: 19px;
+      height: 20px;
+      left: 28px;
+      top: 12px;
+  }
+}
+
+.order__header {
+  max-width: 150px;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  padding: 6px;
+
+
+  position: absolute;
+  top: -36px;
+  left: 21%;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $light-gray;
+
+  background: linear-gradient(to top, $light-green 0%, $light-green 50.5%, $head 51%, $head 100%);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.order__wrap {
+  padding: 0 15px 10px 15px;
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  position: relative;
+
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  background-color: $head;
+
+  &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/icon-form-car.png");
+      width: 27px;
+      height: 15px;
+      left: 10px;
+      top: 22px;
+  }
 }

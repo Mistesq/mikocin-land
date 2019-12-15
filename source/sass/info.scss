@@ -1,9 +1,71 @@
 .info {
   padding: 25px 45px 25px 45px;
 
+  position: relative;
+
+
+
   box-sizing: border-box;
-  border: 3px $orange solid;
+  border: 3px $light-orange solid;
   border-radius: 10px;
+
+  &::before {
+    content: "Вывод:";
+    max-width: 170px;
+    padding: 15px 40px 15px 40px;
+    width: 100%;
+
+    position: absolute;
+    left: 42%;
+    top: -33px;
+
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+
+    background-image: url("../img/icon-exclamation.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $gray;
+
+  }
+}
+
+.info--stats {
+  padding-top: 40px;
+
+  &::before {
+    content: "";
+    max-width: 170px;
+    padding: 15px 40px 15px 40px;
+    width: 100%;
+    height: 37px;
+
+    position: absolute;
+    left: 42%;
+    top: -18px;
+
+    background-image: url("../img/graphic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $white;
+
+  }
+
+}
+
+.info__head {
+  // padding: 15px 40px 15px 40px;
+  // max-width: 170px;
+  // width: 100%;
+  // margin: 0 auto;
+  //
+  // transform: translateY(-55px);
+  // background-image: url(../img/icon-exclamation.png);
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-color: $gray;
 }
 
 .info__text {
