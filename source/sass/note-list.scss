@@ -11,6 +11,8 @@
 .note-list__item {
   max-width: 370px;
   width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
   padding: 50px 20px 20px 20px;
 
   position: relative;
@@ -88,6 +90,14 @@
 .note-list--full-border .note-list__item {
   padding-top: 75px;
   border: 6px $orange solid;
+
+  &:last-child {
+    border: 6px $green solid;
+
+    .note-list__header {
+      background: linear-gradient(to top, $green 0%, $green 50.5%, $white 51%, $white 100%);
+    }
+  }
 }
 
 .note-list__header {
@@ -145,5 +155,11 @@
     height: 11px;
     left: 0px;
     top: 0px;
+  }
+}
+
+@media (max-width: 975px) {
+  .note-list__item {
+    margin-bottom: 80px;
   }
 }

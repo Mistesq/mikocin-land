@@ -1,3 +1,18 @@
+.desc {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/line-blue.png");
+    width: 50px;
+    height: 3px;
+    left: 0px;
+    top: -20px;
+  }
+}
+
+
 .desc__text {
 
   font-size: 18px;
@@ -8,4 +23,14 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 500;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/line-green.png");
+    width: 20px;
+    height: 3px;
+    left: 0px;
+    top: 0px;
+  }
 }

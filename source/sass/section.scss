@@ -115,3 +115,23 @@
   padding-top: 35px;
   margin-right: 190px;
 }
+
+
+
+@media (max-width: 850px) {
+  .section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section__box-img {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .section__title {
+    font-size: 35px;
+    line-height: 38px;
+  }
+}

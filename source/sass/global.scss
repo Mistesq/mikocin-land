@@ -44,10 +44,13 @@ h2 {
 }
 
 .wrapper {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+
 
 .container {
   display: flex;
@@ -58,9 +61,14 @@ h2 {
 .wrap {
   width: 100%;
   padding-top: 50px;
-  margin-bottom: 50px;
 
-  background-color: $gray;
+  background-image: url("../img/back.png");
+  background-size: cover;
+}
+
+.box {
+  width: 100%;
+  padding-top: 50px;
 }
 
 .orange-text {
@@ -69,4 +77,25 @@ h2 {
 
 .green-text {
   color: $light-green;
+}
+
+.green-underline {
+ background-image: linear-gradient(to right, $light-green 75%, transparent 75%);
+ background-position: 0 1.04em;
+ background-repeat: repeat-x;
+ background-size: 1px 7px;
+}
+
+.orange-underline {
+ background-image: linear-gradient(to right, $orange 75%, transparent 75%);
+ background-position: 0 1.04em;
+ background-repeat: repeat-x;
+ background-size: 1px 7px;
+}
+
+@media (max-width: 850px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }

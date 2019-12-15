@@ -13,10 +13,21 @@
   background-color: $white;
   border: 6px $light-green solid;
   border-radius: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url("../img/arrow.png");
+    width: 49px;
+    height: 233px;
+    right: -38px;
+    top: 31%;
+  }
 }
 
 .order__box {
-  padding: 50px 20px 15px 20px;
+  padding: 40px 20px 5px 20px;
   width: 100%;
 
   box-sizing: border-box;
@@ -79,7 +90,7 @@
 
 .order__intro {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   font-size: 20px;
   line-height: 22px;
@@ -90,7 +101,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
 }
 
@@ -165,7 +176,7 @@
   font-weight: 400;
   color: $light-gray;
 
-  background: linear-gradient(to top, $light-green 0%, $light-green 50.5%, $head 51%, $head 100%);
+  background: linear-gradient(to top, $light-green 0%, $light-green 50.5%, transparent 51%, transparent 100%);
   border-radius: 12px;
   box-sizing: border-box;
 }
