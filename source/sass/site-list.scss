@@ -20,11 +20,13 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icon-promo1.png");
-      width: 60px;
-      height: 60px;
       left: -80px;
       top: 6px;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/icon-promo1.png");
     }
   }
 
@@ -32,21 +34,25 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icon-promo2.png");
-      width: 60px;
-      height: 60px;
       left: -80px;
       top: 5px;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/icon-promo2.png");
     }
 
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../img/line-promo.png");
-      width: 9px;
-      height: 146px;
       left: -55px;
       top: -32px;
+
+      width: 9px;
+      height: 146px;
+
+      background-image: url("../img/line-promo.png");
     }
   }
 
@@ -54,11 +60,13 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icon-promo3.png");
-      width: 60px;
-      height: 60px;
       left: -80px;
       top: 21px;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/icon-promo3.png");
     }
   }
 }
@@ -84,11 +92,13 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icon-how1.png");
-      width: 135px;
-      height: 135px;
       left: -160px;
       top: 6px;
+
+      width: 135px;
+      height: 135px;
+
+      background-image: url("../img/icon-how1.png");
     }
   }
 
@@ -96,11 +106,13 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icon-how2.png");
-      width: 135px;
-      height: 135px;
       left: -160px;
       top: 5px;
+
+      width: 135px;
+      height: 135px;
+
+      background-image: url("../img/icon-how2.png");
     }
   }
 
@@ -108,11 +120,48 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/icon-how3.png");
-      width: 135px;
-      height: 135px;
       left: -160px;
       top: 21px;
+
+      width: 135px;
+      height: 135px;
+
+      background-image: url("../img/icon-how3.png");
+    }
+  }
+}
+
+@media (max-width: 615px) {
+  .site-list--guide {
+    margin-left: 50px;
+  }
+
+  .site-list--guide .site-list__item {
+
+    margin-bottom: 70px;
+
+    display: flex;
+    align-items: center;
+
+    &:nth-child(1) {
+      &::before {
+        left: 25px;
+        top: 115px;
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        left: 25px;
+        top: 115px;
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        left: 25px;
+        top: 115px;
+      }
     }
   }
 }
